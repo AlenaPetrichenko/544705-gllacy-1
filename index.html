@@ -5,7 +5,7 @@
 	<title>Gllacy Shop</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
+	<link href="css/style_min.css" rel="stylesheet">
 </head>
 <body>
 	<input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
@@ -72,7 +72,7 @@
 								<div class="login-wrapper">
 									<button class="button login-button" type="submit">Войти</button>
 									<p class="login-password-info">
-										<a class="restore" href="#">Забыли пароль?</a><br>
+										<a class="restore" href="#">Забыли пароль?</a>
 										<a class="check_in" href="#">Новая регистрация</a>
 									</p>
 								</div>
@@ -300,7 +300,7 @@
 						</p>
 						<p class="feedback-item">
 							<label class="visually-hidden">Ваш отзыв</label>
-							<textarea class="answer-icon" name="feedback-answer" rows="5" placeholder="Напишите что-нибудь..."></textarea>
+							<textarea class="answer-icon" name="feedback-answer" rows="5" width="420" placeholder="Напишите что-нибудь..."></textarea>
 						</p>
 						<button class="button feedback-button" type="submit">Отправить</button>
 					</form>
@@ -334,7 +334,7 @@
 						<li class="documentation-item"><a class="footer" href="#">Экологические стандарты</a></li>
 					</ul>
 					<div class="footer-copyright">
-						<a class="footer-copyright-logo" href="https://htmlacademy.ru">
+						<a class="footer-copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
 							<img src="img/logo-htmlacademy.svg" width="109" height="42" alt="Логотип «HTML Academy»">
 						</a>
 						<p>
@@ -345,54 +345,6 @@
 			</footer>
 		</div>
 	</div>
-	<script>
-	var link = document.querySelector(".contacts-button");
-	var popup = document.querySelector(".modal-feedback");
-	var close = popup.querySelector(".modal-close");
-
-	var form = popup.querySelector(".feedback");
-	var text = popup.querySelector("[name=text]");
-	var email = popup.querySelector("[name=email]");
-	var answer = popup.querySelector("[name=feedback-answer]");
-	var storage = localStorage.getItem("login");
-
-	link.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.add("modal-show");
-
-    if (storage) {
-      text.value = storage;
-      email.focus();
-    } else {
-      text.focus();
-    }
-  });
-
-  close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal-show");
-		popup.classList.remove("modal-error");
-  });
-
-  form.addEventListener("submit", function (evt) {
-    if (!text.value || !email.value || !answer.value) {
-      evt.preventDefault();
-			popup.classList.remove("modal-error");
-      popup.offsetWidth = popup.offsetWidth;
-			popup.classList.add("modal-error");
-    } else {
-      localStorage.setItem("text", text.value);
-    }
-  });
-
-  window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      if (popup.classList.contains("modal-show")) {
-        popup.classList.remove("modal-show");
-				popup.classList.remove("modal-error");
-      }
-    }
-  });
-	</script>
+	<script type="text/javascript" src="js/live_min.js"></script>
 </body>
 </html>

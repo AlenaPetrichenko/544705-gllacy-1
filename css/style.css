@@ -1,20 +1,16 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: bold;
   color: rgb(255, 255, 255);
-
   background-color: #849d8f;
 }
 
-/*отмена подчеркиваний у ссылок*/
 a {
   text-decoration: none;
-
 }
 
 .main-navigation {
@@ -75,13 +71,10 @@ a {
 }
 
 /* ----- Слайдер ----- */
-
 .visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
-
   clip: rect(0, 0, 0, 0);
 }
 
@@ -91,18 +84,14 @@ a {
   background-image: url("../img/slider1.png");
   background-repeat: no-repeat;
   background-position: top center;
-
   -webkit-transition: background-image 0.5s ease, background-color 0.5s ease;
-
   -o-transition: background-image 0.5s ease, background-color 0.5s ease;
-
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
 .site-wrapper::before,
 .site-wrapper::after {
   content: "";
-
   visibility: hidden;
 }
 
@@ -130,7 +119,6 @@ a {
 .slider-list {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
@@ -152,7 +140,6 @@ a {
 .button {
   display: inline-block;
   padding: 12px 44px;
-
   font-weight: 600px;
   font-size: 31px;
   line-height: 41px;
@@ -171,7 +158,6 @@ a {
   -webkit-box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
           box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   border: none;
-
   cursor: pointer;
 }
 
@@ -198,7 +184,6 @@ a {
   bottom: 63px;
   left: 0;
   z-index: 20;
-
   font-size: 0;
 }
 
@@ -207,9 +192,7 @@ a {
   width: 17px;
   height: 17px;
   margin-right: 8px;
-
   vertical-align: top;
-
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 50%;
@@ -227,7 +210,6 @@ a {
 #product-1:checked ~ .site-wrapper {
   background-color: #849d8f;
   background-image: url("../img/slider1.png");
-  /*background-size: 1038px 894px;*/
 }
 
 #product-2:checked ~ .site-wrapper {
@@ -287,6 +269,7 @@ a {
 
 .promotion-button
  {
+  padding-top: 10px;
 	padding-right: 25px;
 	padding-left: 25px;
 }
@@ -418,6 +401,7 @@ a {
 .footer-documentation {
   list-style: none;
 }
+
 .footer,
 .footer-button,
 .breadcrumbs-item {
@@ -488,7 +472,6 @@ a {
 .filter p {
   font-size: 14px;
   line-height: 1.143;
-
 }
 
 .sorting option:first-child {
@@ -544,7 +527,6 @@ a {
 
 .login-link {
   position: relative;
-  /*margin-right: 10px;*/
 }
 
 .login-form {
@@ -580,7 +562,6 @@ a {
   height:8px;
   padding:16px 0;
   padding-left: 15px;
-
   border:1px solid #d3d3d2;
   border-radius:6px;
 }
@@ -610,7 +591,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  /*justify-content: space-between;*/
+  justify-content: space-between;
 }
 
 .login-button {
@@ -631,11 +612,11 @@ a {
 }
 
 .login-password-info {
+  width: 120px;
   margin-left: 20px;
 }
 
 /* ----- Сеточные стили ----- */
-
 html,
 body {
   min-width: 1200px;
@@ -649,20 +630,13 @@ body {
   width: 1200px;
   padding-left: 27px;
   padding-right: 27px;
-
-  /* Временно для сетки */
   min-height: 500px;
-  /*outline: 1px solid blue;*/
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 .main-header {
- /* margin-bottom: 0;*/
-
-  /* Временно для сетки */
   min-height: 100px;
-  /*outline: 1px solid green;*/
 }
 
 .main-navigation {
@@ -673,10 +647,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-
-  /* Временно для сетки */
   min-height: 55px;
-  /*outline: 1px solid red;*/
 }
 
 .main-header-logo {
@@ -684,31 +655,23 @@ body {
   height: 64px;
   padding-top: 10px;
   margin-right: 5px;
-
-  /* Временно для сетки */
-  /*outline: 1px solid yellow;*/
 }
 
 .site-navigation {
   margin: 0;
+  padding-left: 3px;
   padding-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  /*-webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;*/
-
   list-style: none;
-
-  /* Временно для сетки */
-  width: 395px;
+  min-width: 385px;
   min-height: 70px;
-  /*outline: 1px solid yellow;*/
 }
 
 .user-navigation {
@@ -716,15 +679,12 @@ body {
   padding: 0;
   padding-top: 23px;
   margin-left: auto;
-
   font-size: 14px;
   line-height: 1.143;
-
   display: -webkit-box;
-
   display: -ms-flexbox;
-
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -733,11 +693,8 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   list-style: none;
-
-  /* Временно для сетки */
   min-height: 70px;
   min-width: 250px;
-  /*outline: 1px solid yellow;*/
 }
 
 .navigation-search {
@@ -859,11 +816,8 @@ body {
   margin-left: auto;
   margin-top: -26px;
   position: relative;
-
   display: -webkit-box;
-
   display: -ms-flexbox;
-
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -872,13 +826,9 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-
   list-style: none;
-
-  /* Временно для сетки */
   width: 175px;
   min-height: 43px;
-  /*outline: 1px solid yellow;*/
 }
 
 .work_time {
@@ -887,7 +837,7 @@ body {
 
 .work_time-day {
   position: absolute;
-  left: 21px;
+  left: 23px;
   top: -2px;
 }
 
@@ -898,8 +848,7 @@ body {
 
 .search-form {
   min-width: 312px;
-  height: 45px;
-
+  min-height: 45px;
   padding: 15px;
   background: #f8f7f4;
   border-radius: 5px;
@@ -919,11 +868,8 @@ body {
   width:315px;
   font-size: 14px;
   line-height: 1.714;
-
-  /*margin-bottom: 5px;  */
   padding:10px 0;
   padding-left: 15px;
-
   border:1px solid #d3d3d2;
   border-radius:6px;
 }
@@ -943,9 +889,8 @@ body {
 .slider {
   position: relative;
   padding-top: 275px;
-
-  /* Временно для сетки */
-  min-height: 256px;
+  margin-bottom: 35px;
+  min-height: 220px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -954,38 +899,29 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   list-style: none;
-  /*outline: 1px solid white;*/
 }
 
 .slider-controls {
   position: absolute;
   left: -6px;
-  bottom: 55px;
-  /* Временно для сетки */
+  bottom: 20px;
   width: 100px;
   min-height: 30px;
-  /*outline: 1px solid yellow;*/
 }
 
 .slider-list {
   margin-left: auto;
   margin-right: auto;
-
-  /* Временно для сетки */
   width: 700px;
   min-height: 210px;
-  /*outline: 1px solid yellow;*/
 }
 
 .promotion-list {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   padding: 0;
-
   display: -webkit-box;
-
   display: -ms-flexbox;
-
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -995,10 +931,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   list-style: none;
-
-  /* Временно для сетки */
-  min-height: 225px;
-  /*outline: 1px solid red;*/
+  min-height: 228px;
 }
 
 .promotion-item {
@@ -1006,26 +939,20 @@ body {
   display: inline-block;
   vertical-align: top;
   border-radius: 15px;
-
-  /* Временно для сетки */
   width: 560px;
   min-height: 225px;
-  /*outline: 1px solid yellow;*/
 }
 
 .promotion-title {
   margin: 15px;
   letter-spacing: 0.3px;
-  /* Временно для сетки */
   min-width: 319px;
   min-height: 37px;
-  /*outline: 1px solid green;*/
 }
 
 .promotion-description {
   margin: 10px;
   margin-left: 20px;
-  /*font-weight: bold;*/
   letter-spacing: 0.013em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1034,11 +961,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-
-  /* Временно для сетки */
   width: 517px;
   min-height: 40px;
-  /*outline: 1px solid green;*/
 }
 
 .promotion-wrapper {
@@ -1051,22 +975,21 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-
-  /* Временно для сетки */
   min-width: 190px;
   min-height: 44px;
-  /*outline: 1px solid green;*/
 }
 
 .promotion-background-first {
+  background-color: #9b2f4c;
 	background-image: url("../img/raspberries.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 15px;
-  min-height: 210px;
+  min-height: 215px;
 }
 
 .promotion-background-second {
+  background-color: #432111;
 	background-image: url("../img/chocolate.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1076,7 +999,7 @@ body {
 
 .popular {
   min-height: 320px;
-  margin-bottom: -42px;
+  margin-bottom: -60px;
 }
 
 .popular-list {
@@ -1084,32 +1007,24 @@ body {
   margin: 0;
   margin-bottom: 40px;
   position: relative;
-
   display: -webkit-box;
-
   display: -ms-flexbox;
-
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
-
-  /* Временно для сетки */
   min-height: 32px;
-  /*outline: 1px solid pink;*/
 }
 
 .popular-item {
   margin-right: 26px;
   position: relative;
-
   display: inline-block;
   vertical-align: top;
   width: 267px;
   min-height: 232px;
   margin-bottom: 28px;
   text-align: center;
-
   min-width: 267px;
-  /*outline: 1px solid orange;*/
 }
 
 .ice-cream-block {
@@ -1118,7 +1033,7 @@ body {
   z-index: 11;
 }
 
-.popular-item:last-child {
+.popular-item:nth-child(4n) {
   margin-right: 0;
 }
 
@@ -1158,8 +1073,6 @@ body {
   width: 61px;
   height: 61px;
   margin-top: -270px;
-
-  /*outline: 1px solid yellow;*/
 }
 
 .price-wrapper {
@@ -1168,7 +1081,6 @@ body {
   display: block;
   min-width: 158px;
   min-height: 37px;
-  /*outline: 1px solid yellow;*/
 }
 
 .popular-price {
@@ -1183,7 +1095,6 @@ body {
   position: absolute;
   top: 5px;
   left: 80px;
-
   display: block;
 }
 
@@ -1197,22 +1108,20 @@ body {
 }
 
 .popular-description {
-  position: absolute;
+  margin-top: -28px;
+  margin-left: 7px;
   display: block;
   left: 7px;
-  top: 282px;
   width: 250px;
   min-height: 31px;
-  /*outline: 1px solid yellow;*/
 }
 
 .popular img {
   border-radius: 100%;
-  /*outline: 1px solid yellow;*/
 }
 
 .advantages {
-  margin-bottom: 37px;
+  margin-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1220,25 +1129,20 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #e6d5b4;
   background-image: url("../img/waffle.jpg");
   background-position: 0 0;
   border-radius: 15px;
-  height: 308px;
-
+  min-height: 308px;
   list-style: none;
-  /* Временно для сетки */
-  /*outline: 1px solid green;*/
 }
 
 .advantages-company {
   margin: 0;
   padding-top: 25px;
   padding-left: 20px;
-  padding-bottom: 13px;
-
-  /* Временно для сетки */
+  padding-bottom: 8px;
   min-height: 56px;
-  /*outline: 1px solid red;*/
 }
 
 .advantages-list {
@@ -1247,10 +1151,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-
-  /* Временно для сетки */
   min-height: 179px;
-  /*outline: 1px solid red;*/
 }
 
 .advantages-list:nth-child(3n) {
@@ -1266,35 +1167,28 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-
-  /* Временно для сетки */
   width: 543px;
   min-height: 75px;
-  /*outline: 1px solid orange;*/
 }
 
 .advantages-item img {
   margin-bottom: auto;
-
-  /* Временно для сетки */
   width: 51px;
   height: 51px;
-  /*outline: 1px solid white;*/
 }
 
 .advantages-item p {
-	margin-top: 7px;
-  /* Временно для сетки */
+	margin-top: 13px;
+  margin-right: 7px;
   width: 479px;
   min-height: 60px;
-  /*outline: 1px solid white;*/
 }
 
 .advantages-item:nth-child(3){
-  margin-top: -4px;
+  margin-top: -7px;
 }
 .advantages-item:nth-child(4){
-  margin-top: -4px;
+  margin-top: -7px;
 }
 
 .blog-wrapper {
@@ -1308,15 +1202,11 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-
   list-style: none;
-  /* Временно для сетки */
   min-height: 202px;
-  /*outline: 1px solid red;*/
 }
 
 .preview_post {
-  /*margin: 0;*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1324,15 +1214,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-
+  background-color: #f4d6dd;
   background-image: url("../img/strawberry.jpg");
   background-repeat: no-repeat;
   background-position: -52px -224px;
   border-radius: 15px;
-  /* Временно для сетки */
   width: 560px;
   min-height: 180px;
-  /*outline: 1px solid yellow;*/
 }
 
 .subscription {
@@ -1346,43 +1234,32 @@ body {
   background: -o-repeating-linear-gradient(135deg, #f8f7f4 0, #f8f7f4 7px, #92cdff 7px, #92cdff 14px, #f8f7f4 14px, #f8f7f4 21px, #fe9e90 21px, #fe9e90 28px);
   background: repeating-linear-gradient(-45deg, #f8f7f4 0, #f8f7f4 7px, #92cdff 7px, #92cdff 14px, #f8f7f4 14px, #f8f7f4 21px, #fe9e90 21px, #fe9e90 28px);
   border-radius: 15px;
-
-  /* Временно для сетки */
   width: 560px;
   min-height: 180px;
- /* outline: 1px solid yellow;*/
 }
 
 .subscription-background {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: "#f8f7f4";
   border-radius: 15px;
-  /* Временно для сетки */
   width: 547px;
   min-height: 211px;
-  /*outline: 1px solid yellow;*/
 }
 
 .post-title {
   margin: 20px;
   margin-top: 0;
-  /* Временно для сетки */
   width: 281px;
   min-height: 82px;
-  /*outline: 1px solid black;*/
 }
 
 .post-new {
   margin: 20px;
-  margin-top: 23px;
+  margin-top: 21px;
   margin-bottom: 5px;
-  /* Временно для сетки */
   min-width: 165px;
   min-height: 17px;
-
-  /*outline: 1px solid black;*/
 }
 
 .subscription-form {
@@ -1391,7 +1268,6 @@ body {
   border-radius: 15px;
   min-width: 550px;
   min-height: 210px;
-  /*outline: 1px solid black;*/
 }
 
 .subscription-description {
@@ -1399,24 +1275,15 @@ body {
   margin: 20px;
   margin-top: 28px;
   margin-bottom: 37px;
-
-
-/* Временно для сетки */
   width: 511px;
   min-height: 62px;
-
- /* outline: 1px solid black;*/
 }
 
 .subscription-email {
   margin: 20px;
   margin-bottom: 10px;
-
-/* Временно для сетки */
   width: 512px;
   min-height: 45px;
-
-  /*outline: 1px solid black;*/
 }
 
 .subscription-email .email-icon {
@@ -1427,7 +1294,6 @@ body {
   padding:18px 0;
   padding-left: 15px;
   margin-right: 6px;
-
   border:1px solid #d3d3d2;
   border-radius:6px;
 }
@@ -1442,7 +1308,6 @@ border:1px solid #8fbdec;
 }
 
 .map {
-  /*position: relative;*/
 	background-image: url("../img/map.png");
 	width: 1200px;
 	height: 430px;
@@ -1458,23 +1323,16 @@ iframe {
   position: relative;
   margin-left: -27px;
   margin-top: 40px;
-
   display: -webkit-box;
-
   display: -ms-flexbox;
-
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-
-  /* Временно для сетки */
   background: none;
   width: 1200px;
   min-height: 430px;
-
-  /*outline: 1px solid blue;*/
 }
 
 .contacts-info {
@@ -1495,9 +1353,6 @@ iframe {
   padding: 15px 25px;
   border-radius: 15px;
   z-index: 31;
-  /*display: none;*/
-
-  /*outline: 1px solid blue;*/
 }
 
 .contacts-button {
@@ -1506,8 +1361,6 @@ iframe {
   margin-top: 10px;
   padding-right: 25px;
   padding-left: 25px;
-
-  /*outline: 1px solid blue;*/
 }
 
 .modal {
@@ -1517,7 +1370,6 @@ iframe {
 
 .modal-show {
   display: block;
-
   animation: bounce 0.6s;
 }
 
@@ -1529,15 +1381,14 @@ iframe {
 
 .feedback {
   position: relative;
-  width: 437px;
-  height: 420px;
+  min-width: 437px;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
   background-color: #f8f7f4;
   color: rgb(50, 50, 50);
   padding: 0 25px;
-
   border-radius: 5px;
-
-  /*outline: 1px solid blue;*/
 }
 
 .feedback-slogan {
@@ -1547,6 +1398,7 @@ iframe {
   font-weight: bold;
   margin: 0;
   padding-top: 15px;
+  margin-bottom: 15px;
 }
 
 .feedback .email-icon,
@@ -1563,10 +1415,8 @@ iframe {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 5px;
-
   padding:10px 0;
   padding-left: 15px;
-
   border:1px solid #d3d3d2;
   border-radius:6px;
 }
@@ -1583,26 +1433,26 @@ iframe {
 }
 
 .feedback-button {
-  position: absolute;
-  left: 320px;
+  margin-left: auto;
+  margin-bottom: 25px;
   font-size: 18px;
   line-height: 1.333;
   margin-top: 0;
   padding: 7px 25px;
+}
 
-  /*outline: 1px solid blue;*/
+.feedback-item
+{
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
 .main-footer {
   margin-top: 20px;
   margin-bottom: 15px;
-
-  /* Временно для сетки */
   background: none;
   min-height: 78px;
-
   width: 1146px;
-  /*outline: 1px solid black;*/
 }
 
 .footer-wrapper {
@@ -1610,30 +1460,19 @@ iframe {
   display: -ms-flexbox;
   display: flex;
   min-height: 78px;
-
-  /* Временно для сетки */
-  /*outline: 1px solid green;*/
 }
 
 .footer-documentation {
-  /*margin-bottom: auto;*/
   width: 345px;
   margin: 0;
   padding: 0;
   margin-top: 13px;
-
   display: -webkit-box;
-
   display: -ms-flexbox;
-
   display: flex;
-  /*flex-direction: column;**/
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-
-  /* Временно для сетки */
   height: 40px;
-  /*outline: 1px solid green;*/
 }
 
 .documentation-item {
@@ -1644,10 +1483,7 @@ iframe {
   font-size: 13px;
   line-height: 1.385;
   position: relative;
-
-  /* Временно для сетки */
   min-height: 16px;
-  /*outline: 1px solid white;*/
 }
 
 .documentation-item:first-child {
@@ -1655,9 +1491,6 @@ iframe {
   padding: 0;
 }
 
-.documentation-item:nth-child(2) {
-  /*margin-top: 13px;*/
-}
 .documentation-item:nth-child(3n) {
   width: 142px;
   margin: 0;
@@ -1681,13 +1514,10 @@ iframe {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 18px;
+  margin-top: 15px;
   width: 187px;
   margin-right: 235px;
-
-  /* Временно для сетки */
   min-height: 50px;
-  /*outline: 1px solid white;*/
 }
 
 .social-button {
@@ -1709,6 +1539,7 @@ iframe {
       flex-wrap: wrap;
   margin: 0px 0px;
 }
+
 .social-button {
   display: block;
   position: relative;
@@ -1726,14 +1557,17 @@ iframe {
 .social-button:hover {
   border: 4px solid rgba(225, 225, 225, 0.7);
 }
+
 .social-button:hover::before {
   opacity: 1.0;
 }
+
 .social-button:active::before {
   opacity: 0.8;
   -webkit-box-shadow: inset 0 2px 2px #888888;
           box-shadow: inset 0 2px 2px #888888;
 }
+
 .social-button::before {
   content: '';
   position: absolute;
@@ -1745,32 +1579,34 @@ iframe {
   border-radius: 50%;
   opacity: 0.8;
 }
+
 .social-button-tw::before {
   background-image: url(../img/twitter.svg);
   background-repeat: no-repeat;
   width: 33px;
   height: 32px;
 }
+
 .social-button-inst::before {
   background-image: url(../img/instagram.svg);
   background-repeat: no-repeat;
   width: 32px;
   height: 32px;
 }
+
 .social-button-fb::before {
   background-image: url(../img/fb.svg);
   background-repeat: no-repeat;
   width: 32px;
   height: 32px;
 }
+
 .social-button-vk::before {
   background-image: url(../img/vk.svg);
   background-repeat: no-repeat;
   width: 32px;
   height: 32px;
 }
-
-
 
 .footer-copyright {
   width: 190px;
@@ -1786,10 +1622,7 @@ iframe {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-
-  /* Временно для сетки */
   min-height: 48px;
-  /*outline: 1px solid white;*/
 }
 
 .footer-copyright p {
@@ -1798,7 +1631,6 @@ iframe {
 }
 
 /* ----- Сеточные стили каталога ----- */
-
 .basket {
   position: relative;
 }
@@ -1812,11 +1644,8 @@ iframe {
   background-color: #f8f7f4;
   color: rgb(50, 50, 50);
   border-radius: 5px;
-
   display: -webkit-box;
-
   display: -ms-flexbox;
-
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1827,11 +1656,8 @@ iframe {
   top: 30px;
   left: -9999px;
   z-index: 30;
-
-  /* Временно для сетки */
-  width: 525px;
+  min-width: 525px;
   min-height: 210px;
-  /*outline: 1px solid red;*/
 }
 
 .basket:hover .basket-form {
@@ -1866,11 +1692,8 @@ iframe {
       -ms-flex-direction: row;
           flex-direction: row;
   padding-left: 5px;
-
-  /* Временно для сетки */
   width: 500px;
   min-height: 45px;
- /* outline: 1px solid yellow;*/
 }
 
 .basket-item a,
@@ -1884,8 +1707,6 @@ iframe {
   text-align: right;
   width: 490px;
   min-height: 10px;
-
-  /*outline: 1px solid yellow;*/
 }
 
 .basket-total {
@@ -1894,14 +1715,10 @@ iframe {
   display: flex;
   font-size: 15px;
   line-height: 1.2;
-
   margin: 10px 0;
   margin-left: 395px;
-
-  /* Временно для сетки */
   min-width: 110px;
   min-height: 20px;
-  /*outline: 1px solid yellow;*/
 }
 
 .basket-wrapper {
@@ -1909,34 +1726,27 @@ iframe {
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
-
+  margin-bottom: 30px;
   width: 162px;
   height: 40px;
-  /*outline: 1px solid yellow;*/
 }
 
 .basket-remove {
   margin-right: 10px;
-  /* Временно для сетки */
   width: 20px;
   min-height: 45px;
-  /*outline: 1px solid pink;*/
 }
 
 .basket-product-img {
   margin-right: 10px;
-  /* Временно для сетки */
   width: 35px;
   min-height: 45px;
-  /*outline: 1px solid pink;*/
 }
 
 .basket-product {
   margin-right: 20px;
-  /* Временно для сетки */
   width: 220px;
   min-height: 45px;
-  /*outline: 1px solid pink;*/
 }
 
 .basket-product a,
@@ -1951,10 +1761,8 @@ iframe {
 
 .basket-amount {
   margin-right: 20px;
-  /* Временно для сетки */
   width: 100px;
   min-height: 45px;
-  /*outline: 1px solid pink;*/
 }
 
 .basket-price-kg {
@@ -1962,10 +1770,8 @@ iframe {
 }
 
 .basket-price {
-  /* Временно для сетки */
   width: 55px;
   min-height: 45px;
-  /*outline: 1px solid pink;*/
 }
 
 .basket-main-button {
@@ -1988,22 +1794,16 @@ iframe {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-
-  /* Временно для сетки */
   width: 1146px;
   min-height: 24px;
-  /*outline: 1px solid pink;*/
 }
 
 .page-title {
   margin: 0;
-  margin-bottom: 30px;
-  margin-top: -5px;
+  margin-bottom: 28px;
+  margin-top: -3px;
   padding: 0;
-
-  /* Временно для сетки */
   min-height: 30px;
-  /*outline: 1px solid pink;*/
 }
 
 .catalog-columns {
@@ -2017,8 +1817,6 @@ iframe {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-
-  /*outline: 1px solid red;*/
 }
 
 .filter {
@@ -2033,10 +1831,7 @@ iframe {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 32px;
-
-  /* Временно для сетки */
   min-height: 138px;
-  /*outline: 1px solid white;*/
 }
 
 .filter-sorting {
@@ -2051,10 +1846,7 @@ iframe {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-
-  /* Временно для сетки */
   min-height: 63px;
-  /*outline: 1px solid pink;*/
 }
 
 .filter-sorting legend,
@@ -2087,17 +1879,13 @@ iframe {
   padding: 0;
   margin: 0;
   margin-left:12px;
-
-  /* Временно для сетки */
   min-height: 61px;
-  /*outline: 1px solid pink;*/
 }
 
 .range-controls {
   position: relative;
   width: 175px;
   margin-top: 5px;
-
 }
 
 .range-controls .scale {
@@ -2115,10 +1903,8 @@ iframe {
 .range-toggle {
   position: absolute;
   top: 8px;
-
   width: 4px;
   height: 4px;
-
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
@@ -2130,7 +1916,6 @@ iframe {
 .range-toggle:hover {
   border: 10px solid #ffffff;
   background: #1c4f80;
-
 }
 
 .range-toggle-min {
@@ -2152,10 +1937,7 @@ iframe {
   margin: 0;
   padding-top: 5px;
   margin-left:15px;
-
-  /* Временно для сетки */
   min-height: 64px;
-  /*outline: 1px solid pink;*/
 }
 
 .filter-fillers legend {
@@ -2178,8 +1960,9 @@ iframe {
 .fatty .filter-label {
   display: block;
   margin: 0;
-  margin-bottom: 5px;
-  padding-left: 35px;
+  margin-bottom: 3px;
+  padding-top: 2px;
+  padding-left: 34px;
   position: relative;
   min-width: 15px;
   cursor: pointer;
@@ -2221,16 +2004,14 @@ iframe {
 
 .fatty .filter-input-radio:checked + .filter-label::before {
   display: block;
+  background-color: white;
 }
 
 .filter-fillers {
   width: 702px;
   padding: 0;
   margin: 0;
-
-  /* Временно для сетки */
   min-height: 65px;
-  /*outline: 1px solid pink;*/
 }
 
 .fillers-list {
@@ -2246,10 +2027,7 @@ iframe {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-
-  /* Временно для сетки */
   min-height: 27px;
-  /*outline: 1px solid white;*/
 }
 
 .fillers-item {
@@ -2259,10 +2037,8 @@ iframe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-
   min-width: 98px;
   min-height: 26px;
-  /*outline: 1px solid green;*/
 }
 
 .fillers-item:nth-child(3n) {
@@ -2301,10 +2077,8 @@ iframe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-
   min-width: 58px;
   min-height: 20px;
-  /*outline: 1px solid pink;*/
 }
 
 .filter-label {
@@ -2317,7 +2091,6 @@ iframe {
   margin: 0;
   margin-bottom: 5px;
   padding-left: 33px;
-  /*padding-right: 15px;*/
   position: relative;
   min-width: 15px;
   cursor: pointer;
@@ -2343,7 +2116,6 @@ iframe {
   -o-transition: transform .3s;
   transition: transform .3s;
   transition: transform .3s, -webkit-transform .3s;
-
 }
 
 .filter-fillers .filter-label::after {
@@ -2358,27 +2130,22 @@ iframe {
   cursor: pointer;
   border: 2px solid rgba(255, 255, 255, 0.7);
   text-align: center;
-
 }
 
 .filter-fillers .filter-label:hover::after{
  border: 2px solid white;
 }
 
-
 .filter-fillers .filter-input-checkbox:checked + .filter-label::before {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
       transform: scale(1);
-
+background-color: white;
 }
 
 .catalog {
   width: 1146px;
-
-  /* Временно для сетки */
   min-height: 687px;
-  /*outline: 1px solid white;*/
 }
 
 .catalog-list {
@@ -2389,26 +2156,20 @@ iframe {
       flex-wrap: wrap;
   padding: 0;
   margin: 0;
-
   list-style: none;
   min-height: 52px;
-  /*outline: 1px solid pink;*/
 }
 
 .catalog-item {
   position: relative;
   width: 267px;
   margin-right: 26px;
-  margin-bottom: 25px;
-
+  margin-bottom: -10px;
   display: inline-block;
   vertical-align: top;
   text-align: center;
-
-  /* Временно для сетки */
   min-height: 232px;
   min-width: 267px;
-  /*outline: 1px solid pink;*/
 }
 
 .ice-cream-block {
@@ -2451,8 +2212,6 @@ iframe {
 
 .catalog img {
   border-radius: 100%;
-
-  /*outline: 1px solid yellow;*/
 }
 
 .catalog-wrapper {
@@ -2461,7 +2220,6 @@ iframe {
   display: block;
   min-width: 158px;
   min-height: 37px;
-  /*outline: 1px solid yellow;*/
 }
 
 .catalog-price {
@@ -2490,12 +2248,12 @@ iframe {
 }
 
 .catalog-description {
-  position: absolute;
+  margin-top: -28px;
+  margin-left: 5px;
   display: block;
   top: 264px;
   width: 255px;
   min-height: 41px;
-  /*outline: 1px solid yellow;*/
 }
 
 .pagination-button-back {
@@ -2507,20 +2265,14 @@ iframe {
 .pagination-list {
   padding: 0;
   margin: 0;
-  margin-top: 40px;
+  margin-top: 45px;
   margin-left: auto;
-
   display: -webkit-box;
-
   display: -ms-flexbox;
-
   display: flex;
   list-style: none;
-
-  /* Временно для сетки */
   width: 195px;
   min-height: 35px;
-  /*outline: 1px solid yellow;*/
 }
 
 .pagination-item {
@@ -2528,28 +2280,25 @@ iframe {
   margin: 0;
   width: 30px;
   padding-top: 3px;
+  padding-left: 6px;
   text-align: center;
-  margin-bottom: 20px;
-
-  /* Временно для сетки */
+  margin-bottom: 23px;
   min-height: 30px;
-  /*outline: 1px solid pink;*/
 }
 
 .pagination-item:first-child {
-  padding-top: 0;
-  text-align: left;
-}
-
-.pagination-item:last-child {
-  padding-top: 0;
-  text-align: right;
+  padding-left: 0;
 }
 
 .pagination-button-next,
 .pagination-button-back {
   margin: 0;
-  padding: 5px 8px;
+  padding-top: 3px;
+}
+
+.pagination-item:last-child {
+  padding-left: 5px;
+  text-align: right;
 }
 
 .filter-button {
@@ -2568,7 +2317,6 @@ iframe {
   -webkit-box-shadow: none;
           box-shadow: none;
   text-shadow: none;
-
   width: 140px;
   height: 35px;
 }
@@ -2597,8 +2345,8 @@ iframe {
 .catalog-variants {
   position: absolute;
   top: 31px;
-  width: 146px;
-  height: 170px;
+  min-width: 146px;
+  min-height: 170px;
   background: rgb(247, 246, 243);
   border-radius: 5px;
   overflow: hidden;
@@ -2632,7 +2380,6 @@ iframe {
 .catalog-variants li a {
   font-size: 14px;
   line-height: 1.143;
-
   text-decoration: none;
   font-weight: normal;
   color: black;
@@ -2645,7 +2392,6 @@ iframe {
 .variant-first:after {
   content: "";
   position: absolute;
-
   background-color: #f8f7f4;
   width: 130px;
   top: 35px;
@@ -2656,7 +2402,7 @@ iframe {
  .button-show {
   display: none;
   position: absolute;
-  top: 340px;
+  top: 97%;
   left: 13%;
   padding: 10px 17px;
   border-radius: 24px;
@@ -2714,29 +2460,22 @@ iframe {
   position: absolute;
   top: 15px;
   right: 15px;
-
   width: 22px;
   height: 22px;
-
   font-size: 0;
-
   background-color: transparent;
   border: 0;
-
   cursor: pointer;
 }
 
 .modal-close::before,
 .modal-close::after {
   content: "";
-
   position: absolute;
   top: 10px;
   left: 2px;
-
   width: 19px;
   height: 2px;
-
   background-color: black;
 }
 
